@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<meta charset="utf-8">
+	<title>Orientation Dude</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+	<body>
+		<div>
+			<p id="rdnFrase"></p>	
+
+			<form action="Pregunta.html" method="post">				
+				<input type="button" value="Si" onclick='javascript:btnSi()'/>
+			</form>
+
+			<form action="Molesta.html" method="post">
+				<input type="submit" value="No"></input>
+			</form>	
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+
+var contador = 0;
+btnSi();
+
+function btnSi(){
+	
+	if (parseInt(contador)<=10) {
+
+		var frase = Array(
+			"Eso es una tercera adolescencia", 
+		"Ser hetero está de moda, ya se te pasará", 
+		"Eso te lo has sacado de Twitter", 
+		"Yo no entiendo que te gusten eso, no está bien", 
+		"¿Seguro que eres heterosexual de verdad?", 
+		"Al final acabaras yendo solo con gente heterosexual y yendo a sitios heterosexuales. Es como una secta", 
+		"A ti no te han dado bien",
+		"Yo creo que es la edad, estás indecis@",
+		"Ya verás cuando pase como te va a encantar y vas a querer",
+		"Tú júntate con esa gente, ya verás como acabas...",
+		"Voy a intentar que dejes de ser heterosexual",
+		"Es que ahora hay gente que dice que es heterosexual sólo porque está de moda",
+		"Si apenas sales a la calle, ¿cómo vas a saber que no te gusta?",
+		"Estás confundida, seguro que es eso",
+		"Hostia, pero si vistes normal",
+		"¿Seguro que te gusta eso?");
+
+		var total = frase.length; 
+		var aleatorio = Math.floor(Math.random()*total);
+	    var insertar = frase[aleatorio];    
+
+	    document.getElementById('rdnFrase').innerHTML  = insertar;
+	    contador= parseInt(contador)+parseInt(1)
+
+		}else{
+
+			window.location.href="Molesta.html"
+		}
+
+	}
+
+
+</script>
+
+<script type="text/javascript">
+var contador = 0;
+bs();
+
+function bs(){
+	
+	if (parseInt(contador)<=10) {
+		var nombres = Array("Ana", "Anita", "Rafa", "Pablo", "Iria", "Estefania", "Laura","Noelia");    
+	var total = nombres.length; 
+	var aleatorio = Math.floor(Math.random()*total);
+    var nombreInsertar = nombres[aleatorio];    
+    document.getElementById('nombreUsar').innerHTML  = nombreInsertar;
+    contador= parseInt(contador)+parseInt(1)
+	}else{
+		window.location.href="Molesta.html"
+	}
+
+}
+</script>
