@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Orientation Dude</title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 	<body>
@@ -12,12 +12,13 @@
 			<p id="rdnFrase"></p>	
 
 			<form action="Pregunta.html" method="post">				
-				<input type="button" value="Si" onclick='javascript:btnSi()'/>
+				<input type="submit" value="Quiero seguir leyendo" onclick='javascript:btnSi()'/>
 			</form>
 
 			<form action="Molesta.html" method="post">
-				<input type="submit" value="No"></input>
-			</form>	
+				<input type="submit" value="Para de decirme esas cosas"></input>
+			</form>
+				
 		</div>
 	</body>
 </html>
@@ -32,22 +33,66 @@ function btnSi(){
 	if (parseInt(contador)<=10) {
 
 		var frase = Array(
-			"Eso es una tercera adolescencia", 
-		"Ser hetero está de moda, ya se te pasará", 
-		"Eso te lo has sacado de Twitter", 
-		"Yo no entiendo que te gusten eso, no está bien", 
-		"¿Seguro que eres heterosexual de verdad?", 
-		"Al final acabaras yendo solo con gente heterosexual y yendo a sitios heterosexuales. Es como una secta", 
-		"A ti no te han dado bien",
-		"Yo creo que es la edad, estás indecis@",
-		"Ya verás cuando pase como te va a encantar y vas a querer",
-		"Tú júntate con esa gente, ya verás como acabas...",
-		"Voy a intentar que dejes de ser heterosexual",
-		"Es que ahora hay gente que dice que es heterosexual sólo porque está de moda",
-		"Si apenas sales a la calle, ¿cómo vas a saber que no te gusta?",
-		"Estás confundida, seguro que es eso",
-		"Hostia, pero si vistes normal",
-		"¿Seguro que te gusta eso?");
+			"¿Estás segur@? Creo que lo tuyo es pura confusión, ya se te pasará",
+			"¿Del todo? Hasta que no lo pruebes todo no puedes saberlo",
+			"¿Segur@? No, Es solo una fase",
+			"Quién sabe, igual todavía no has encontrado a la persona de tu vida",
+			"¿Aún no te has decidido?",
+			"Eso seguro que es porque no has encontrado quien te lo haga bien",
+			"Te gustan porque está de moda, además ¿cómo sabes que te gustan?",
+			"Tú no eres hetero, eres homo poco curioso",
+			"Tú tienes un trastorno de personalidad",
+			"Si nunca has tenido nada con una persona de tu mismo sexo, ¿cómo sabes que no te gustan?",
+			"Eso es una tercera adolescencia",
+			"Ser hetero está de moda, ya se te pasará",
+			"Eso te lo has sacado de Twitter",
+			"Yo no entiendo que te gusten eso, no está bien",
+			"No me digas que eres heterosexual como excusa porque para no darme el susto",
+			"Al final acabarás yendo solo con gente heterosexual y yendo a sitios heterosexuales. Es como una secta",
+			"¿Entonces solo te gusta un sexo? ¿No te has decidido a probar con alguno del tuyo aún?",
+			"¿Hacemos un trio?",
+			"Seguro que a ti no te han dado bien",
+			"Eso es porque no has probado una buena *****",
+			"Si llevas tantos años con lo mismo por algo será, deja de hacer el tonto ya que el pavo se ha pasado",
+			"Yo creo que es la edad, estás indecis@.",
+			"Eso es porque no has probado, ya verás cuando pase como te va a encantar y vas a querer",
+			"No le digas a nadie que eres heterosexual",
+			"Tú júntate con esa gente...ya verás cómo acabas",
+			"Seguro han intentando que dejes de ser heterosexual",
+			"Es que ahora hay gente que dice que es hetero sólo porque está de moda",
+			"¿Y cómo sabes si eres hetero, si nunca has estado con una persona de tu mismo sexo?",
+			"¿Has estado con alguna persona de tu mismo sexo? ¿Si no has estado con una cómo vas a saber que no te gustan? Estás confundid@",
+			"Hostia pero si vistes normal",
+			"Si apenas sales a la calle, ¿cómo vas a saber que no te gustan las persona de tu mismo sexo si nunca lo has probado con ellas?",
+			"Algo diferente te tiene que gustar",
+			"No puedes saber si eres heterosexual si no has estado con una persona de tu mismo sexo",
+			"¿Heterosexual? necesitas un/a buen/a *****",
+			"Eso es que no lo has probado",
+			"Lo que eres es un/a estrech@",
+			"La heterosexualidad es una fase, ya se te pasará",
+			"Pero hace años no eras eso",
+			"No soy heterófobo, pero no me gusta que salgas con alguien de otro género. Tendrías que probar a salir con el mismo en vez del contrario",
+			"No eres heterosexual tú lo que estás pasando es una fase",
+			"¿Heterosexual? eso es que no lo has probado",
+			"Cambiarás",
+			"Ve al médico, a lo mejor tienes un problema de hormonas",
+			"Eso no existe",
+			"Eres hetero resentido...",
+			"Yo no soy heterófobo pero no respeto esa condición, así no funciona.",
+			"¿Pero has estado alguna vez con una persona de tu mismo sexo?",
+			"Eso no existe",
+			"Eso es una enfermedad",
+			"Es que no conociste a la persona adecuada",
+			"Te da miedo el sexo",
+			"Eso es una fase",
+			"Cómo puedes saber que eres heterosexual si nunca has mantenido relaciones sexuales con una persona de tu mismo sexo",
+			"¿Heterosexual? Joder, así te quitas posibilidades de follar",
+			"La heterosexualidad no existe",
+			"Sólo estás confundid@",
+			"Ya se te pasará la tontería",
+			"Ah, vale, pero no te me lances",
+			"¿Heterosexual? Nah, no me lo creo",
+			"Hombre, yo nunca he comido caviar pero estoy seguro que me iba a gustar");
 
 		var total = frase.length; 
 		var aleatorio = Math.floor(Math.random()*total);
@@ -64,24 +109,4 @@ function btnSi(){
 	}
 
 
-</script>
-
-<script type="text/javascript">
-var contador = 0;
-bs();
-
-function bs(){
-	
-	if (parseInt(contador)<=10) {
-		var nombres = Array("Ana", "Anita", "Rafa", "Pablo", "Iria", "Estefania", "Laura","Noelia");    
-	var total = nombres.length; 
-	var aleatorio = Math.floor(Math.random()*total);
-    var nombreInsertar = nombres[aleatorio];    
-    document.getElementById('nombreUsar').innerHTML  = nombreInsertar;
-    contador= parseInt(contador)+parseInt(1)
-	}else{
-		window.location.href="Molesta.html"
-	}
-
-}
 </script>

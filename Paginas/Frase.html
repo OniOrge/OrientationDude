@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Orientation Dude</title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 	<body>
@@ -12,15 +12,64 @@
 			
 			<p>Todos debemos ser capaces de aceptar la realidad de las personas y cosas tal cual son. Eres perfect@, todas las personas son perfectas a su modo, no necesitas cambiar, nadie debe intentar cambiarte, debes (y deben) aceptarte tal y como eres. Eres un ser extraordinario.</p>
 
-			<form action="Principal.html" method="post">				
+			<form action="../Principal.html" method="post">				
 				<input type="submit" value="Volver a probar"></input>
-			</form>			
+			</form>		
+
+			<p id="rdnFrase"></p>	
 		</div>
+		
+
+		<footer>
+			<p>Especial agradecimiento a tod@s los que me han ayudado a crear esta aplicación ya sea con el código (Mónica y Tania, mil gracias), o con sus frases partículares de como han dudado de su orientación por no ser "lo normal". Sois increibles, nunca lo olvidéis.</p>
+		</footer>
 
 	</body>
 </html>
+
 <script type="text/javascript">
+
+var contador = 0;
+btnSi();
+
+function btnSi(){
 	
+	if (parseInt(contador)<=10) {
+
+		var frase = Array(
+			"No importa lo oscura que sea la noche, porque siempre llegará la luz del día. Ya sabes que siempre podrás contar con los tuyos. ¡Ánimo!",
+			"Los que no se arriesgan a perder, nunca tendrán la oportunidad de ganar. Adelante, mucho ánimo y no te detengas.",
+			"En el corazón de todos los inviernos vive una cálida primavera, y detrás de cada noche una sonriente aurora. Ya sabes que siempre podrás contar con los tuyos.",
+			"Es duro fracasar en algo, pero es mucho peor no haberlo intentado. Sigue soñando porque algún día conseguirás todo lo que sueñas. ¡Mucho ánimo y siempre adelante!",
+			"Cada fracaso supone un capítulo más en la historia de nuestra vida y una lección que nos ayuda a crecer. No te dejes desanimar por los fracasos. Aprende de ellos y sigue adelante.",
+			"Olvida los malos ratos y los errores cometidos, sólo fueron experiencias y lecciones de las que siempre se aprende algo. Cierra las puertas que tienes detrás y abre las ventanas hacia el futuro. ¡Levanta tu ánimo!",
+			"Para triunfar en la vida, no es importante llegar el primero. Para triunfar simplemente hay que llegar, levantándose cada vez que se cae en el camino y es mucho mejor viajar lleno de esperanza que llegar vacío.",
+			"Cuando pierdas algo, no te fijes en lo que has perdido, sino en lo que te queda por ganar. Levanta la cabeza y sigue adelante que mañana brillará el sol de un nuevo día con miles de nuevas oportunidades.",
+			"Es cierto que la vida da golpes fuertes, pero recuerda que un fracaso no es el final y, aunque nos cueste levantarnos después de una caída, existe un mundo nuevo mas allá de nuestro horizonte.",
+			"Es duro fracasar en algo, pero es mucho peor no haberlo intentado. Sigue haciendo lo que amas y en lo que crees. Sigue con tus ideales hasta el final.",
+			"No te dejes desanimar por los fracasos. Aprende de ellos, y sigue adelante. Nunca una noche ha vencido al amanecer, y nunca un problema ha vencido a la esperanza.",
+			"Si lloras por lo que no tienes, no podrás sonreír por lo que te rodea. Existen mil razones para amar, soñar y ser feliz. Mil razones para vivir. Por muy larga que sea la tormenta, el sol siempre vuelve a brillar entre las nubes.",
+			"Cuando emprendemos un proyecto nos gusta llegar a la meta que nos hemos propuesto, pero no siempre se consigue. El fracaso consiste en no persistir, en desanimarse después de un error, en no levantarse después de caer. ¡Ánimo y adelante!",
+			"Jamás te canses de soñar, la vida es un largo camino que tenemos que recorrer a pesar de las dificultades.",
+			"Si la vida te da mil razones para llorar, demuéstrale que tienes mil y una para soñar. Haz de tu vida un sueño y de tu sueño una realidad.",
+			"Los fracasos son una gran oportunidad para empezar otra vez con más inteligencia. ¡Mucho ánimo y siempre adelante!",
+			"El éxito no es para siempre y el fracaso no es el final, lo verdaderamente importante es tener energía y valor para seguir adelante... ¡y eso a ti te sobra!");
+
+		var total = frase.length; 
+		var aleatorio = Math.floor(Math.random()*total);
+	    var insertar = frase[aleatorio];    
+
+	    document.getElementById('rdnFrase').innerHTML  = insertar;
+	    contador= parseInt(contador)+parseInt(1)
+
+		}else{
+
+			window.location.href="Molesta.html"
+		}
+
+	}
+
+
 </script>
 
 
