@@ -5,7 +5,7 @@ Usé lo que creo que es mi fuerte: HTML5 y CSS3. Para la programación me apoyé
 
 Además de toda la programación, todas las frases que aparecen son verídicas, algunas modificadas para que pudieran ser coherentes, gracias a toda la gente que participó (muchísimas gracias por ayudarme con el proyecto a tod@s) pude crear un array bastante extenso (y eso que no incluí unas cuantas).
 
-Me hubiese gustado programarlo con algo más de arte, usando a dos personajes en el que uno pregunta y el otro responde a través de los botones, puede que algún día, cuando aprenda a dibujar…
+Me hubiese gustado programarlo con algo más de arte, usando a dos personajes en el que uno pregunta y el otro responde a través de los botones, puede que algún día, cuando aprenda a dibujar… Además, me gustaría incluir otro menú para escoger el sexo de la persona que pregunta, para poder realizar el script de forma más concreta para cada caso.
 
 Espero que la disfrutéis probándola como yo lo he hecho programándola.
 
